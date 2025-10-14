@@ -2,9 +2,9 @@ import ToDoWrapper from './components/ToDoWrapper'
 import './App.css';
 
 function App() {
-  return (
-    <ToDoWrapper />
-  );
+    return (
+        <ToDoWrapper />
+    );
 }
 
 export default App;
