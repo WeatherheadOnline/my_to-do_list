@@ -1,4 +1,5 @@
 import ToDoWrapper from './components/ToDoWrapper'
+import ModeButtons from './components/ModeButtons';
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
         <>
             <div className='bkgd-layer' /> 
             <ToDoWrapper />
+            <ModeButtons />
         </>
     );
 }
