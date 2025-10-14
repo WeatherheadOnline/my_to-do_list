@@ -1,31 +1,61 @@
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    /* Generic styles */
+
 * {
     margin: 0;
     padding: 0;
 }
 
+.bkgd-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+}
+
+body {
+    background-color: var(--bkgd);
+    color: var(--color-p);
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--color-h1);
+}
+
+p, input, button, span {
+    font-size: 1.2rem;
+}
+
+input, span, svg {
+    padding: 0.5rem;
+}
+
+input::placeholder {
+    color: var(--color-placeholder);
+}
+
 .to-do-wrapper {
-    outline: 1px solid red;
-    background-color: lightblue;
     width: clamp(18rem, 75vw, 30rem);
     padding: 2rem 5vw;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    border-radius: 1rem;
-
+    gap: 1.2rem;
+    background-color: var(--bkgd-todo-wrapper);
 }
 
 .to-do-item {
-    outline: 1px solid green;
-    background-color: lightgreen;
     display: flex;
-
+    align-items: center;
+    background-color: var(--bkgd-todo-item);
 }
 
 .to-do-item span {
-    outline: 1px solid magenta;
-    background-color: pink;
     display: inline-block;
     flex-grow: 1;
 }
@@ -41,13 +71,36 @@ form {
 
 input {
     flex-grow: 1;
+    background-color: var(--bkgd-input);
+    color: var(--color-input);
 }
 
 button {
     width: min(15vw, 6rem);
+    color: var(--color-button);
+    background-color: var(--bkgd-button);
 }
 
+@media screen and (hover) {
+    button:hover {
+        color: var(--color-button-hover);
+        background-color: var(--bkgd-button-h--color-button-hover);
+    }
+    button:active {
+        color: var(--color-button-active);
+        background-color: var(--bkgd-button-h--color-button-active);
+    }
+}
 
+svg:first-of-type {
+    background-color: var(--bkgd-edit-btn);
+    color: var(--color-edit-btn);
+}
+
+svg:last-of-type {
+    background-color: var(--bkgd-trash-btn);
+    color: var(--color-trash-btn);
+}
 
 
 
@@ -57,10 +110,11 @@ button {
 
 .activeError, .inactiveError {
     font-size: 0.8em;
+    padding-top: 0.2em;
 }
 
 .activeError {
-    color: red;
+    color: var(--color-error-text);
     visibility: visible;
 }
 

@@ -3,7 +3,10 @@ import './App.css';
 
 function App() {
     return (
-        <ToDoWrapper />
+        <>
+            <div className='bkgd-layer' /> 
+            <ToDoWrapper />
+        </>
     );
 }
 

@@ -31,7 +31,7 @@ const ToDoWrapper = () => {
 
   return (
     <div className='to-do-wrapper'>
-        <h1>This is the list</h1>
+        <h1>Getting it done!</h1>
         <ToDoForm handleAddToDo={handleAddToDo} />
         {toDoList.map(item => (
             item.isEditing ? (
