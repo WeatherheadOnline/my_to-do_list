@@ -1,0 +1,107 @@
+.teal-brown {
+    --dark: #432323;
+    --bright: #2F5755;
+    --lighter: #5A9690;
+    --lightest: #E0D9D9;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: var(--bright);
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --bkgd-todo-item: var(--bright);
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    /* --color-trash-btn: ; */
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 57, 42);
+}
+
+.navy-beige {
+    --dark: #030303;
+    --bright: #123458;
+    --lighter: #D4C9BE;
+    --lightest: #ffffff;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: var(--bright);
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --bkgd-todo-item: var(--bright);
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    /* --color-trash-btn: ; */
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 57, 42);
+}
+
+.teal {
+    --dark: #06202B;
+    --bright: #077A7D;
+    --lighter: #7AE2CF;
+    --lightest: #F5EEDD;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: var(--bright);
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --bkgd-todo-item: var(--bright);
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    /* --color-trash-btn: ; */
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(215, 53, 53);
+}
+
+.purple {
+    --dark: #21094E;
+    --bright: #511281;
+    --lighter: #4CA1A3;
+    --lightest: #A5E1AD;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: var(--bright);
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --bkgd-todo-item: var(--bright);
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    /* --color-trash-btn: ; */
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 46, 81);
+}
