@@ -1,3 +1,66 @@
+.dark {
+    --dark: #000000;
+    --bright: #151A1A;
+    --lighter: #909999;
+    --lightest: #FFFFFF;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: ;
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --border-input: var(--lighter);
+    --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    /* --color-trash-btn: var(--lighter); */
+
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: #FF0000;   
+    .to-do-wrapper {
+        border: 1px solid var(--lighter);
+    }
+}
+
+.light {
+    --dark: #EEEEEE;
+    /* --bright: #EEEEEE; */
+    --lighter: #777777;
+    --lightest: #000000;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: ;
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--dark);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --border-input: var(--lightest);
+    --bkgd-todo-item: var(--dark);
+    --border-todo-item: var(--lighter);
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    --color-trash-btn: var(--lighter);
+
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 46, 81);    
+}
+
 .teal-brown {
     --dark: #432323;
     --bright: #2F5755;
@@ -15,14 +78,31 @@
     /* --bkgd-button-active: ; */
     --bkgd: var(--bright);
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
+    --bkgd-input: var(--dark);
     --color-input: var(--lightest);
+    --border-input: var(--lighter);
     --bkgd-todo-item: var(--bright);
+    --border-todo-item: var(--dark);
     /* --color-edit-btn: ; */
     /* --bkgd-edit-btn: ; */
     /* --color-trash-btn: ; */
     /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 57, 42);
+    --color-error-text: rgb(234, 102, 69);
+
+    background: linear-gradient(
+        var(--bright),
+        var(--lightest) 40%,
+        var(--dark) 90%
+    );
+    .to-do-wrapper {
+        background: linear-gradient(
+            var(--dark), 
+            var(--lighter)
+        );        
+    }
+    .to-do-item {
+        border-radius: 0.5rem; 
+    }    
 }
 
 .navy-beige {
@@ -42,14 +122,18 @@
     /* --bkgd-button-active: ; */
     --bkgd: var(--bright);
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
+    --bkgd-input: var(--bright);
     --color-input: var(--lightest);
+    /* --border-input: v; */
     --bkgd-todo-item: var(--bright);
+    /* --border-todo-item:; */
     /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
-    /* --color-trash-btn: ; */
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 57, 42);
+    --bkgd-edit-btn: var(--dark);
+    /* --color-trash-btn: var(--bright); */
+    /* --bkgd-trash-btn: var(--lighter); */
+    --color-error-text: #FF0000;
+    background-image: url(../assets/stars-bkgd-cyan.svg), url(../assets/stars-bkgd-lavender.svg), url(../assets/stars-bkgd-magenta.svg);
+    background-size: 10%, 15%, 23%;
 }
 
 .teal {
@@ -71,7 +155,9 @@
     --bkgd-todo-wrapper: var(--dark);
     /* --bkgd-input: ; */
     --color-input: var(--lightest);
+    --border-input: var(--lighter);
     --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
     /* --color-edit-btn: ; */
     /* --bkgd-edit-btn: ; */
     /* --color-trash-btn: ; */
@@ -89,7 +175,7 @@
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
     /* --color-button: ; */
-    --bkgd-button: var(--bright);
+    --bkgd-button: ;
     /* --color-button-hover: ; */
     /* --bkgd-button-hover: ; */
     /* --color-button-active: ; */
@@ -98,10 +184,175 @@
     --bkgd-todo-wrapper: var(--dark);
     /* --bkgd-input: ; */
     --color-input: var(--lightest);
+    --border-input:;
     --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
     /* --color-edit-btn: ; */
     /* --bkgd-edit-btn: ; */
-    /* --color-trash-btn: ; */
+    --color-trash-btn: var(--lighter);
+
     /* --bkgd-trash-btn: ; */
     --color-error-text: rgb(255, 46, 81);
+
+    input, .to-do-wrapper, button, .to-do-item {
+        border-radius: 2rem;
+    }
+    input, button {
+        border: 3px solid var(--bright);
+        outline: none;
+    }
+}
+
+.cream-green {
+    --dark: #043915;
+    --bright: #4C763B;
+    --lighter: #B0CE88;
+    --lightest: #FFFD8F;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: ;
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --border-input:;
+    --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    --color-trash-btn: var(--lighter);
+
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 46, 81);
+
+    background-image: url(../assets/wm-2-horizontal.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+
+.unicorn {
+    --dark: #450693;
+    --bright: #8C00FF;
+    --lighter: #FF3F7F;
+    --lightest: #FFC400;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: ;
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --border-input:;
+    --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
+    --color-edit-btn: var(--lighter);
+    --bkgd-edit-btn: var(--lightest);
+    --color-trash-btn: var(--dark);
+    --bkgd-trash-btn: var(--lighter);
+    --color-error-text: rgb(255, 46, 81);
+    background: linear-gradient(
+        var(--bright) 80vh,
+        var(--dark) 80vh,
+        var(--dark) 82vh,
+        var(--bright) 82vh,
+        var(--bright) 84vh,
+        var(--lighter) 84vh,
+        var(--lighter) 86vh,
+        var(--lightest) 86vh,
+        var(--lightest) 88vh,
+        var(--dark) 88vh,
+        var(--dark) 100vh,
+        var(--bright) 100vh
+    )
+}
+
+.ocean {
+    --darker: #;
+    --darkest: ;
+    --teal-dark: #;
+    --teal-light: #;
+    --sand-dark: #;
+    --sand-light: ;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: ;
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --border-input:;
+    --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    --color-trash-btn: var(--lighter);
+
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 46, 81);    
+}
+
+
+
+
+
+
+.w-online {
+    --dark: #21094E;
+    --bright: #511281;
+    --lighter: #4CA1A3;
+    --lightest: #A5E1AD;
+
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    /* --color-button: ; */
+    --bkgd-button: ;
+    /* --color-button-hover: ; */
+    /* --bkgd-button-hover: ; */
+    /* --color-button-active: ; */
+    /* --bkgd-button-active: ; */
+    --bkgd: var(--bright);
+    --bkgd-todo-wrapper: var(--dark);
+    /* --bkgd-input: ; */
+    --color-input: var(--lightest);
+    --border-input:;
+    --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
+    /* --color-edit-btn: ; */
+    /* --bkgd-edit-btn: ; */
+    --color-trash-btn: var(--lighter);
+
+    /* --bkgd-trash-btn: ; */
+    --color-error-text: rgb(255, 46, 81);
+    
+    background: linear-gradient(
+        #091b3e,
+        #020421
+    );
+}
+
+.sparkles {
+
 }

@@ -6,10 +6,16 @@ import { useState } from 'react';
 
 function App() {
     const themeOptions = [
-        {themeName: "purple", key: 0},
-        {themeName: "teal", key: 1},
-        {themeName: "teal-brown", key: 2},
-        {themeName: "navy-beige", key: 3},
+        {themeName: "light", key: 0},
+        {themeName: "dark", key: 1},
+        {themeName: "purple", key: 2},
+        {themeName: "teal", key: 3},
+        {themeName: "teal-brown", key: 4},
+        {themeName: "navy-beige", key: 5},
+        // {themeName: "w-online", key: 4},
+        {themeName: "cream-green", key: 6},
+        {themeName: "unicorn", key: 7}
+
     ];
 
     const [theme, setTheme] = useState("teal");

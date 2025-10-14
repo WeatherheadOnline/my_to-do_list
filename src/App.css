@@ -59,6 +59,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     background-color: var(--bkgd-todo-item);
+    border: 1px solid var(--border-todo-item);
 }
 
 .to-do-item span {
@@ -79,6 +80,8 @@ input {
     flex-grow: 1;
     background-color: var(--bkgd-input);
     color: var(--color-input);
+    border: 1px solid var(--border-input);
+    outline: none;
 }
 
 button {
@@ -152,6 +155,7 @@ svg:last-of-type {
     height: 17px;
     width: 17px;
     border-radius: 50%;
+    outline: 1px solid #DDDDDD;
     @media (hover),
       screen and (any-hover: none) and (orientation: landscape) and (min-height: 700px) {
             height: 17px;
@@ -164,14 +168,52 @@ svg:last-of-type {
 }
 
 .modes-wrapper #purple {
-    background-color: purple;
+    background-color: #511281;
 }
 .modes-wrapper #teal {
-    background-color: teal;
+    background-color: #077A7D;
 }
 .modes-wrapper #teal-brown {
-    background-color: maroon;
+    background: linear-gradient(
+        to right,
+        #2F5755 50%,
+        #432323 50%
+    );
 }
 .modes-wrapper #navy-beige {
-    background-color: darkblue;
+    background-color: #123458;
 }
+
+.modes-wrapper #w-online {
+    background: linear-gradient(
+        45deg,
+        #004c8a,
+        #000214
+    )
+}
+
+.modes-wrapper #cream-green {
+    background-color: #4C763B;
+}
+
+.modes-wrapper #dark {
+    background-color: #000000;
+}
+
+.modes-wrapper #light {
+    background-color: #FFFFFF;
+}
+
+.modes-wrapper #unicorn {
+    background: linear-gradient(
+        45deg,
+        #450693 25%,
+        #8C00FF,
+        #FF3F7F,
+        #FFC400 75%
+    )
+}
+    /* --dark: #450693;
+    --bright: #8C00FF;
+    --lighter: #FF3F7F;
+    --lightest: #FFC400; */
