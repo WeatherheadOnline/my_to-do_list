@@ -4,7 +4,7 @@ const EditToDoForm = ({item, handleEdited}) => {
     const [value, setValue] = useState(item.task);
     const handleSubmit = e => {
         e.preventDefault();
-        handleEdited(item.key, value);
+        value.length > 0 && handleEdited(item.key, value);
     }
     return (
         <form onSubmit={handleSubmit}>

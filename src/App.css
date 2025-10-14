@@ -1,3 +1,29 @@
 .completed {
-  color: grey;
+    color: grey;
+}
+
+/* .error-text {
+    font-size: 0.8em;
+    color: red;
+}
+
+.error-text.active {
+    visibility: visible;
+}
+
+.error-text.inactive {
+    visibility: hidden;
+} */
+
+.activeError, .inactiveError {
+    font-size: 0.8em;
+}
+
+.activeError {
+    color: red;
+    visibility: visible;
+}
+
+.inactiveError {
+    visibility: hidden;
 }
