@@ -4,7 +4,7 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
 const ToDo = ({item, deleteToDo, completeToDo, switchToEditing}) => {
     return (
-        <div>
+        <div class="to-do-item">
             <span className={item.isCompleted ? "completed" : ""} onClick={() => completeToDo(item.key)}>{item.task}</span>
             <FontAwesomeIcon icon={faPenToSquare} onClick={() => switchToEditing(item.key)} />
             <FontAwesomeIcon icon={faTrashCan} onClick={() => deleteToDo(item.key)}  />

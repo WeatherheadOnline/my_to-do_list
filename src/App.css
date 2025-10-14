@@ -1,19 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.to-do-wrapper {
+    outline: 1px solid red;
+    background-color: lightblue;
+    width: clamp(18rem, 75vw, 30rem);
+    padding: 2rem 5vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+
+}
+
+.to-do-item {
+    outline: 1px solid green;
+    background-color: lightgreen;
+    display: flex;
+
+}
+
+.to-do-item span {
+    outline: 1px solid magenta;
+    background-color: pink;
+    display: inline-block;
+    flex-grow: 1;
+}
+
+form {
+    width: 100%;
+}
+
+.input-btn-group {
+    width: 100%;
+    display: flex;
+}
+
+input {
+    flex-grow: 1;
+}
+
+button {
+    width: min(15vw, 6rem);
+}
+
+
+
+
+
 .completed {
     color: grey;
 }
-
-/* .error-text {
-    font-size: 0.8em;
-    color: red;
-}
-
-.error-text.active {
-    visibility: visible;
-}
-
-.error-text.inactive {
-    visibility: hidden;
-} */
 
 .activeError, .inactiveError {
     font-size: 0.8em;

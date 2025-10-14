@@ -12,8 +12,10 @@ const ToDoForm = ({handleAddToDo}) => {
     
     return (
         <form onSubmit={handleSubmit}>
-        <input type="text" value={value} onChange={e => {setValue(e.target.value); setErrorText(false)}} placeholder='Enter a task here' />
-        <button type="sumbit">Enter</button>
+            <div className="input-btn-group">
+                <input type="text" value={value} onChange={e => {setValue(e.target.value); setErrorText(false)}} placeholder='Enter a task here' />
+                <button type="sumbit">Enter</button>
+            </div>
         <p className={errorText ? "activeError" : "inactiveError"}>Please enter some text</p>
         </form>
     )

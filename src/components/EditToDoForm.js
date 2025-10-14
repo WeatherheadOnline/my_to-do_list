@@ -8,8 +8,10 @@ const EditToDoForm = ({item, handleEdited}) => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" value={value} onChange={e => {setValue(e.target.value)}} placeholder={item.task} />
-            <button type="sumbit">Update</button>
+            <div className="input-btn-group">
+                <input type="text" value={value} onChange={e => {setValue(e.target.value)}} placeholder={item.task} />
+                <button type="sumbit">Update</button>
+            </div>
         </form>
     )
 }
