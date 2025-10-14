@@ -121,3 +121,52 @@ svg:last-of-type {
 .inactiveError {
     visibility: hidden;
 }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    /* Mode buttons */
+
+#modes {
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    margin: var(--hud-padding-desktop);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px #000000 inset;
+}
+.mode-button {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    @media (hover),
+      screen and (any-hover: none) and (orientation: landscape) and (min-height: 700px) {
+            height: 17px;
+            width: 17px;
+    }
+}
+#modes {
+    background-color: #444444;
+    outline: 2px solid #888888;
+}
+.mode-button.active {
+    outline: 6px solid #888888;
+    box-shadow: 0 0 3px 7px black;
+}
+
+#modes #theme {
+    background-color: purple;
+}
+#modes #teal {
+    background-color: teal;
+}
+#modes #teal-brown {
+    background-color: maroon;
+}
+#modes #navy-beige {
+    background-color: darkblue;
+}
