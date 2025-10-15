@@ -26,7 +26,6 @@ function App() {
 
     return (
         <section className={theme}>
-            <div className='bkgd-layer' /> 
             <ToDoWrapper />
             <ModeButtons getTheme={getTheme} themeOptions={themeOptions} initialState={theme} />
         </section>

@@ -52,7 +52,6 @@ const ToDoWrapper = () => {
     const handleAddToDo = todo => {
         addToDo(todo);
         keySetter(keyCounter);
-        console.log(keyCounter);
     }
 
   return (
