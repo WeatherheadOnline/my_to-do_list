@@ -1,0 +1,24 @@
+p, span {font-size: 1.2rem;}
+span, svg {padding: 0.5rem;}
+.to-do-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--bkgd-todo-item);
+    border: 1px solid var(--border-todo-item);
+}
+.to-do-item span {
+    display: inline-block;
+    flex-grow: 1;
+}
+svg:first-of-type {
+    background-color: var(--bkgd-edit-btn);
+    color: var(--color-edit-btn);
+}
+svg:last-of-type {
+    background-color: var(--bkgd-trash-btn);
+    color: var(--color-trash-btn);
+}
+.completed {
+    color: var(--color-completed);
+    text-decoration: line-through;
+}

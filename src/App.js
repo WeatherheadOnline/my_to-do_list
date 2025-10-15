@@ -1,5 +1,5 @@
-import ToDoWrapper from './components/ToDoWrapper'
-import ModeButtons from './components/ModeButtons';
+import ToDoWrapper from './components/ToDoWrapper/ToDoWrapper'
+import ModeButtons from './components/ModeButtons/ModeButtons';
 import './App.css';
 import './css/themes.css'
 import { useState } from 'react';

@@ -1,0 +1,30 @@
+form {width: 100%;}
+input, button {font-size: 1.2rem;}
+input {padding: 0.5rem;}
+input::placeholder {color: var(--color-placeholder);}
+.input-btn-group {display: flex;}
+input {
+    background-color: var(--bkgd-input);
+    color: var(--color-input);
+    border: 1px solid var(--border-input);
+    outline: none;
+    flex-grow: 1;
+    max-width: calc(100% - 5rem);
+}
+button {
+    color: var(--color-button);
+    background-color: var(--bkgd-button);
+    border: 1px solid var(--border-button);
+    outline: none;
+    width: 4rem;
+}
+@media screen and (hover) {
+    button:hover {
+        color: var(--color-button-hover);
+        background-color: var(--bkgd-button-hover);
+    }
+    button:active {
+        color: var(--color-button-active);
+        background-color: var(--bkgd-button-active);
+    }
+}

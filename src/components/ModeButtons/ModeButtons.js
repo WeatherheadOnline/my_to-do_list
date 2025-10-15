@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import './ModeButtons.css';
 
 const ModeButtons = ({getTheme, themeOptions, initialState}) => {
 

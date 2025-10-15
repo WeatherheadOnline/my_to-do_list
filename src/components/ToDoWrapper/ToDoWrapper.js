@@ -1,34 +1,35 @@
-import React, {useState, useEffect } from 'react'
-import ToDoForm from './ToDoForm';
-import EditToDoForm from './EditToDoForm';
-import ToDo from './ToDo';
+import React, {useState } from 'react';
+import ToDoForm from '../ToDoForm/ToDoForm';
+import EditToDoForm from '../EditToDoForm';
+import ToDo from '../ToDo/ToDo';
+import './ToDoWrapper.css';
 
 const ToDoWrapper = () => {
     const [keyCounter, setKeyCounter] = useState(4);
     const [toDoList, setToDoList] = useState([
         {
-        task: "One...", 
-        key: 0,
-        isCompleted: true,
-        isEditing: false
+            task: "One...", 
+            key: 0,
+            isCompleted: true,
+            isEditing: false
         },
         {
-        task: "Two...", 
-        key: 1,
-        isCompleted: true,
-        isEditing: false
+            task: "Two...", 
+            key: 1,
+            isCompleted: true,
+            isEditing: false
         },
         {
-        task: "Three...", 
-        key: 2,
-        isCompleted: true,
-        isEditing: false
+            task: "Three...", 
+            key: 2,
+            isCompleted: true,
+            isEditing: false
         },
         {
-        task: "Let's go!", 
-        key: 3,
-        isCompleted: false,
-        isEditing: false
+            task: "Let's go!", 
+            key: 3,
+            isCompleted: false,
+            isEditing: false
         },
     ]);
     const addToDo = todo => setToDoList([...toDoList, {

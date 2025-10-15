@@ -1,0 +1,70 @@
+.modes-wrapper {
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px #000000 inset;
+    background-color: #444444DD;
+    outline: 2px solid #888888DD;
+}
+.mode-button {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    outline: 1px solid #DDDDDD;
+}
+.mode-button.active {
+    outline: 6px solid #888888;
+    box-shadow: 0 0 3px 7px black;
+}
+.modes-wrapper #light {background-color: #FFFFFF;}
+.modes-wrapper #dark {background-color: #000000;}
+.modes-wrapper #teal {background-color: #077A7D;}
+.modes-wrapper #unicorn {
+    background: linear-gradient(
+        45deg,
+        #450693 25%,
+        #8C00FF,
+        #FF3F7F,
+        #FFC400 75%
+    )
+}
+.modes-wrapper #navy-beige {background-color: #123458;}
+.modes-wrapper #purple {background-color: #511281;}
+.modes-wrapper #cream-green {background-color: #4C763B;}
+.modes-wrapper #night-stars {
+    background: 
+    linear-gradient(
+        45deg,
+        #0D1F2D 35%,
+        transparent 35%,
+        transparent 65%,
+        #0D1F2D 65%
+    ),
+    linear-gradient(
+        -45deg,
+        #0D1F2D 35%,
+        #D2973B 35%,
+        #D2973B 65%,
+        #0D1F2D 65%
+    );
+}
+.modes-wrapper #teal-brown {
+    background: linear-gradient(
+        to right,
+        #2F5755 50%,
+        #432323 50%
+    );
+}
+.modes-wrapper #summer {
+    background: linear-gradient(
+        #0046FF 50%,
+        #FF9013 75%
+    )
+}
