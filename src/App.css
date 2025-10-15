@@ -53,6 +53,7 @@ input::placeholder {
     flex-direction: column;
     gap: 1.2rem;
     background-color: var(--bkgd-todo-wrapper);
+    border: 1px solid var(--border-todo-wrapper);
 }
 
 .to-do-item {
@@ -72,32 +73,37 @@ form {
 }
 
 .input-btn-group {
-    width: 100%;
+    /* width: clamp(18rem, 75vw, 30rem); */
     display: flex;
 }
 
 input {
-    flex-grow: 1;
     background-color: var(--bkgd-input);
     color: var(--color-input);
     border: 1px solid var(--border-input);
     outline: none;
+    flex-grow: 1;
+    max-width: calc(100% - 5rem);
+    @media screen and (hover) {
+    }
 }
 
 button {
-    width: min(15vw, 6rem);
     color: var(--color-button);
     background-color: var(--bkgd-button);
+    border: 1px solid var(--border-button);
+    outline: none;
+    width: 4rem;
 }
 
 @media screen and (hover) {
     button:hover {
         color: var(--color-button-hover);
-        background-color: var(--bkgd-button-h--color-button-hover);
+        background-color: var(--bkgd-button-hover);
     }
     button:active {
         color: var(--color-button-active);
-        background-color: var(--bkgd-button-h--color-button-active);
+        background-color: var(--bkgd-button-active);
     }
 }
 
@@ -111,10 +117,9 @@ svg:last-of-type {
     color: var(--color-trash-btn);
 }
 
-
-
 .completed {
-    color: grey;
+    color: var(--color-completed);
+    text-decoration: line-through;
 }
 
 .activeError, .inactiveError {
@@ -139,7 +144,7 @@ svg:last-of-type {
     z-index: 3;
     position: fixed;
     bottom: 0;
-    margin: var(--hud-padding-desktop);
+    margin: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,14 +189,6 @@ svg:last-of-type {
     background-color: #123458;
 }
 
-.modes-wrapper #w-online {
-    background: linear-gradient(
-        45deg,
-        #004c8a,
-        #000214
-    )
-}
-
 .modes-wrapper #cream-green {
     background-color: #4C763B;
 }
@@ -213,7 +210,30 @@ svg:last-of-type {
         #FFC400 75%
     )
 }
-    /* --dark: #450693;
-    --bright: #8C00FF;
-    --lighter: #FF3F7F;
-    --lightest: #FFC400; */
+
+.modes-wrapper #night-stars {
+    background: 
+    linear-gradient(
+        45deg,
+        #0D1F2D 35%,
+        transparent 35%,
+        transparent 65%,
+        #0D1F2D 65%
+    ),
+    linear-gradient(
+        -45deg,
+        #0D1F2D 35%,
+        #D2973B 35%,
+        #D2973B 65%,
+        #0D1F2D 65%
+    )
+    
+    ;
+}
+
+.modes-wrapper #summer {
+    background: linear-gradient(
+        #0046FF 50%,
+        #FF9013 75%
+    )
+}

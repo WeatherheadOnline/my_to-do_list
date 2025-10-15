@@ -1,64 +1,63 @@
+.to-do-item,  input, button {
+    font-family: "Verdana", sans-serif;
+}
+
+h1 {
+    font-family: "Georgia", serif;
+}
+
 .dark {
     --dark: #000000;
     --bright: #151A1A;
-    --lighter: #909999;
+    --lighter: hsl(180, 4%, 50%);
     --lightest: #FFFFFF;
 
+    --bkgd: var(--bright);
     --color-h1: var(--lightest);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
+    --color-completed: var(--lighter);
+    --color-error-text: #FF0000;   
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input: var(--lighter);
+    --border-todo-wrapper:;
     --bkgd-todo-item: var(--bright);
     --border-todo-item:;
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
-    /* --color-trash-btn: var(--lighter); */
-
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: #FF0000;   
+    --color-input: var(--lightest);
+    --border-input: var(--lighter);
+    --bkgd-button: ;
+    --border-button: ;
+    --color-button-hover: var(--dark);
+    --bkgd-button-hover: var(--lighter);
     .to-do-wrapper {
         border: 1px solid var(--lighter);
+    }
+    .to-do-item,  input, button {
+        font-family: "Montserrat", sans-serif;
+    }
+    h1 {
+        font-family: "Montserrat Alternates", sans-serif;
     }
 }
 
 .light {
     --dark: #EEEEEE;
-    /* --bright: #EEEEEE; */
     --lighter: #777777;
     --lightest: #000000;
 
+    --bkgd: var(--dark);
     --color-h1: var(--lightest);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--dark);
-    --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input: var(--lightest);
+    --color-completed: var(--lighter);
+    --color-error-text: rgb(255, 46, 81);    
     --bkgd-todo-item: var(--dark);
     --border-todo-item: var(--lighter);
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
+    --color-input: var(--lightest);
+    --border-input: var(--lightest);
+    --bkgd-button: ;
+    --border-button: ;
+    --bkgd-button-hover: var(--lighter);
     --color-trash-btn: var(--lighter);
-
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 46, 81);    
 }
 
 .teal-brown {
@@ -67,39 +66,25 @@
     --lighter: #5A9690;
     --lightest: #E0D9D9;
 
-    --color-h1: var(--lightest);
-    --color-p: var(--lightest);
+    --bkgd: var(--dark);
+    --color-h1: var(--bright);
+    --color-p: var(--dark);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: var(--bright);
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
-    --bkgd-todo-wrapper: var(--dark);
-    --bkgd-input: var(--dark);
-    --color-input: var(--lightest);
-    --border-input: var(--lighter);
-    --bkgd-todo-item: var(--bright);
-    --border-todo-item: var(--dark);
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
-    /* --color-trash-btn: ; */
-    /* --bkgd-trash-btn: ; */
+    --color-completed: var(--lighter);
     --color-error-text: rgb(234, 102, 69);
+    --bkgd-todo-wrapper: var(--lightest);
+    --bkgd-todo-item: var(--lightest);
+    --border-todo-item: var(--dark);
+    --color-input: var(--lightest);
+    --bkgd-input: var(--lightest);
+    --border-input: var(--dark);
+    --bkgd-button: var(--lighter);
+    --border-button: ;
+    --color-button-active: var(--lightest);
+    --bkgd-button-active: var(--bright);
+    --color-edit-btn: var(--bright);
+    --color-trash-btn: var(--lighter);
 
-    background: linear-gradient(
-        var(--bright),
-        var(--lightest) 40%,
-        var(--dark) 90%
-    );
-    .to-do-wrapper {
-        background: linear-gradient(
-            var(--dark), 
-            var(--lighter)
-        );        
-    }
     .to-do-item {
         border-radius: 0.5rem; 
     }    
@@ -111,29 +96,30 @@
     --lighter: #D4C9BE;
     --lightest: #ffffff;
 
-    --color-h1: var(--lightest);
+    --bkgd: var(--bright);
+    --color-h1: var(--lighter);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: var(--bright);
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
-    --bkgd-todo-wrapper: var(--dark);
-    --bkgd-input: var(--bright);
-    --color-input: var(--lightest);
-    /* --border-input: v; */
-    --bkgd-todo-item: var(--bright);
-    /* --border-todo-item:; */
-    /* --color-edit-btn: ; */
-    --bkgd-edit-btn: var(--dark);
-    /* --color-trash-btn: var(--bright); */
-    /* --bkgd-trash-btn: var(--lighter); */
+    --color-completed: var(--dark);
     --color-error-text: #FF0000;
-    background-image: url(../assets/stars-bkgd-cyan.svg), url(../assets/stars-bkgd-lavender.svg), url(../assets/stars-bkgd-magenta.svg);
-    background-size: 10%, 15%, 23%;
+    --bkgd-todo-wrapper: var(--dark);
+    --bkgd-todo-item: var(--bright);
+    --color-input: var(--lightest);
+    --bkgd-input: var(--bright);
+    --bkgd-button: var(--bright);
+    --border-button: ;
+    --color-button-active: var(--bright);
+    --bkgd-edit-btn: var(--dark);
+
+    input, .to-do-item, button {
+        border-radius: 1rem 0;
+    }
+    .to-do-wrapper {
+        border-radius: 3rem 0;
+    }
+    .to-do-item, input, button, h1 {
+        font-family: "Space Grotesk", sans-serif;
+    }
 }
 
 .teal {
@@ -142,27 +128,31 @@
     --lighter: #7AE2CF;
     --lightest: #F5EEDD;
 
+    --bkgd: var(--bright);
     --color-h1: var(--lightest);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: var(--bright);
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
+    --color-completed: var(--dark);
+    --color-error-text: rgb(215, 53, 53);
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input: var(--lighter);
     --bkgd-todo-item: var(--bright);
     --border-todo-item:;
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
-    /* --color-trash-btn: ; */
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(215, 53, 53);
+    --color-input: var(--lightest);
+    --border-input: var(--lighter);
+    --bkgd-button: var(--bright);
+    --border-button: var(--lightest);
+    --color-button-active: var(--bright);
+    .to-do-item,  input, button {
+        font-family: "Georgia", serif;
+    };
+    .to-do-wrapper {
+        background: linear-gradient(
+            -10deg,
+            var(--dark) 70%,
+            #08384f,
+            #0b5b6b
+        );
+    }
 }
 
 .purple {
@@ -171,37 +161,37 @@
     --lighter: #4CA1A3;
     --lightest: #A5E1AD;
 
+    --bkgd: var(--bright);
     --color-h1: var(--lightest);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
+    --color-completed: var(--dark);
+    --color-error-text: rgb(255, 46, 81);
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input:;
     --bkgd-todo-item: var(--bright);
     --border-todo-item:;
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
+    --color-input: var(--lightest);
+    --border-input: var(--lighter);
+    --bkgd-button: ;
+    --border-button: var(--lighter);
+    --bkgd-button-hover: var(--bright);
+    --color-button-active: var(--lighter);
     --color-trash-btn: var(--lighter);
-
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 46, 81);
 
     input, .to-do-wrapper, button, .to-do-item {
         border-radius: 2rem;
     }
     input, button {
-        border: 3px solid var(--bright);
-        outline: none;
+        border-width: 3px;
+    }
+    .to-do-item,  input, button {
+        font-family: "Archivo", sans-serif;
+    }
+    h1 {
+        font-family: "Archivo Black", sans-serif;
     }
 }
+
 
 .cream-green {
     --dark: #043915;
@@ -209,28 +199,21 @@
     --lighter: #B0CE88;
     --lightest: #FFFD8F;
 
+    --bkgd: var(--bright);
     --color-h1: var(--lightest);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
+    --color-completed: var(--dark);
+    --color-error-text: rgb(255, 46, 81);
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input:;
     --bkgd-todo-item: var(--bright);
     --border-todo-item:;
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
+    --color-input: var(--lightest);
+    --border-input:;
+    --bkgd-button: ;
+    --border-button: ;
+    --bkgd-button-hover: var(--bright);
     --color-trash-btn: var(--lighter);
-
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 46, 81);
 
     background-image: url(../assets/wm-2-horizontal.svg);
     background-repeat: repeat-x;
@@ -244,27 +227,27 @@
     --lighter: #FF3F7F;
     --lightest: #FFC400;
 
+    --bkgd: var(--bright);
     --color-h1: var(--lightest);
     --color-p: var(--lightest);
     --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
+    --color-completed: var(--dark);
+    --color-error-text: rgb(255, 46, 81);
     --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input:;
     --bkgd-todo-item: var(--bright);
     --border-todo-item:;
+    --color-input: var(--lightest);
+    --border-input:;
+    --bkgd-button: ;
+    --border-button: ;
+    --color-button-hover: var(--lighter);
+    --bkgd-button-hover: var(--lightest);
+    --color-button-active: var(--lightest);
+    --bkgd-button-active: var(--lighter);
     --color-edit-btn: var(--lighter);
     --bkgd-edit-btn: var(--lightest);
     --color-trash-btn: var(--dark);
     --bkgd-trash-btn: var(--lighter);
-    --color-error-text: rgb(255, 46, 81);
     background: linear-gradient(
         var(--bright) 80vh,
         var(--dark) 80vh,
@@ -278,81 +261,85 @@
         var(--dark) 88vh,
         var(--dark) 100vh,
         var(--bright) 100vh
-    )
-}
-
-.ocean {
-    --darker: #;
-    --darkest: ;
-    --teal-dark: #;
-    --teal-light: #;
-    --sand-dark: #;
-    --sand-light: ;
-
-    --color-h1: var(--lightest);
-    --color-p: var(--lightest);
-    --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
-    --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input:;
-    --bkgd-todo-item: var(--bright);
-    --border-todo-item:;
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
-    --color-trash-btn: var(--lighter);
-
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 46, 81);    
-}
-
-
-
-
-
-
-.w-online {
-    --dark: #21094E;
-    --bright: #511281;
-    --lighter: #4CA1A3;
-    --lightest: #A5E1AD;
-
-    --color-h1: var(--lightest);
-    --color-p: var(--lightest);
-    --color-placeholder: var(--lighter);
-    /* --color-button: ; */
-    --bkgd-button: ;
-    /* --color-button-hover: ; */
-    /* --bkgd-button-hover: ; */
-    /* --color-button-active: ; */
-    /* --bkgd-button-active: ; */
-    --bkgd: var(--bright);
-    --bkgd-todo-wrapper: var(--dark);
-    /* --bkgd-input: ; */
-    --color-input: var(--lightest);
-    --border-input:;
-    --bkgd-todo-item: var(--bright);
-    --border-todo-item:;
-    /* --color-edit-btn: ; */
-    /* --bkgd-edit-btn: ; */
-    --color-trash-btn: var(--lighter);
-
-    /* --bkgd-trash-btn: ; */
-    --color-error-text: rgb(255, 46, 81);
-    
-    background: linear-gradient(
-        #091b3e,
-        #020421
     );
+    h1 {
+        font-family: "Bowlby One SC", sans-serif;
+    }
 }
 
-.sparkles {
 
+
+.night-stars {
+    --darkest: #051016;
+    --dark: #0D1F2D;
+    --bright: #2F586E;
+    --lighter: #D2973B;
+    --lightest: #E8CA84;
+
+    --bkgd: var(--darkest);
+    --color-h1: var(--lightest);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    --color-completed: var(--dark);
+    --color-error-text: rgb(255, 46, 81);
+    --bkgd-todo-wrapper: var(--dark);
+    --border-todo-wrapper: var(--lighter);
+    --bkgd-todo-item: var(--bright);
+    --border-todo-item:;
+    --color-input: var(--lightest);
+    --border-input: var(--lightest);
+    --bkgd-button: var(--bright);
+    --border-button: var(--lightest);
+    --color-button-active: var(--bright);
+    --color-edit-btn: var(--lighter);
+    --color-trash-btn: var(--lighter);
+    
+    background-image: url(../assets/stars-bkgd-gold.svg), url(../assets/stars-bkgd-gold.svg), url(../assets/stars-bkgd-gold.svg);
+    background-size: 23%, 40%, 55%;
+    .to-do-wrapper {
+        border-width: 3px;
+    }
+    .to-do-item, input, button {
+        font-family: "Libre Baskerville", serif;
+    }
+    h1 {
+        font-family: "Quintessential", serif;
+    }
+}
+
+
+
+.summer {
+    --dark: #0046FF;
+    --bright: #73C8D2;
+    --lighter: #FF9013;
+    --lightest: #F5F1DC;
+
+    --bkgd: var(--lighter);
+    --color-h1: var(--dark);
+    --color-p: var(--lightest);
+    --color-placeholder: var(--lighter);
+    --color-completed: var(--bright);
+    --color-error-text: #FF0000;
+    --bkgd-todo-wrapper: var(--lightest);
+    --bkgd-todo-item: var(--dark);
+    --color-input: var(--dark);
+    --border-input: var(--dark);
+    --bkgd-button: var(--dark);
+    --border-button: var(--dark);
+    --color-button-hover: var(--lighter);
+    --bkgd-button-hover: var(--dark);
+    --color-button-active: var(--dark);
+    --color-edit-btn: var(--bright);
+    --color-trash-btn: var(--bright);
+
+    .to-do-item, .input-btn-group {
+        box-shadow: 0.5rem 0.5rem 0 var(--lighter);
+    }
+    .activeError, .inactiveError {
+        margin-top: 0.5rem;
+    }
+    h1 {
+        font-family: "Barrio", system-ui;
+    }
 }

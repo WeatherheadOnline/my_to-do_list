@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
-const ModeButtons = ({getTheme, themeOptions}) => {
+const ModeButtons = ({getTheme, themeOptions, initialState}) => {
 
-    const [active, setActive] = useState("teal");
+    const [active, setActive] = useState(initialState);
  
     const handleClick = e => {
         getTheme(e.target.id);

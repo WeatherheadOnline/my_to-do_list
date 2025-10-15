@@ -4,8 +4,33 @@ import EditToDoForm from './EditToDoForm';
 import ToDo from './ToDo';
 
 const ToDoWrapper = () => {
-    const [keyCounter, setKeyCounter] = useState(0);
-    const [toDoList, setToDoList] = useState([]);
+    const [keyCounter, setKeyCounter] = useState(4);
+    const [toDoList, setToDoList] = useState([
+        {
+        task: "One...", 
+        key: 0,
+        isCompleted: true,
+        isEditing: false
+        },
+        {
+        task: "Two...", 
+        key: 1,
+        isCompleted: true,
+        isEditing: false
+        },
+        {
+        task: "Three...", 
+        key: 2,
+        isCompleted: true,
+        isEditing: false
+        },
+        {
+        task: "Let's go!", 
+        key: 3,
+        isCompleted: false,
+        isEditing: false
+        },
+    ]);
     const addToDo = todo => setToDoList([...toDoList, {
         task: todo, 
         key: keyCounter,

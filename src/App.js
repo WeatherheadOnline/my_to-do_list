@@ -8,17 +8,17 @@ function App() {
     const themeOptions = [
         {themeName: "light", key: 0},
         {themeName: "dark", key: 1},
-        {themeName: "purple", key: 2},
-        {themeName: "teal", key: 3},
-        {themeName: "teal-brown", key: 4},
-        {themeName: "navy-beige", key: 5},
-        // {themeName: "w-online", key: 4},
+        {themeName: "teal", key: 2},
+        {themeName: "unicorn", key: 3},
+        {themeName: "navy-beige", key: 4},
+        {themeName: "purple", key: 5},
         {themeName: "cream-green", key: 6},
-        {themeName: "unicorn", key: 7}
-
+        {themeName: "night-stars", key: 7},
+        {themeName: "teal-brown", key: 8},
+        {themeName: "summer", key: 9},
     ];
 
-    const [theme, setTheme] = useState("teal");
+    const [theme, setTheme] = useState("light");
 
     function getTheme(newTheme) {
         setTheme(newTheme)
@@ -28,7 +28,7 @@ function App() {
         <section className={theme}>
             <div className='bkgd-layer' /> 
             <ToDoWrapper />
-            <ModeButtons getTheme={getTheme} themeOptions={themeOptions}  />
+            <ModeButtons getTheme={getTheme} themeOptions={themeOptions} initialState={theme} />
         </section>
     );
 }
